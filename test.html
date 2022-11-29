@@ -14,4 +14,54 @@ CSS ---> desine easy , code reusable
 JS ---> to make things faster, to load contenet withoughth refresh
 to do the calculation on client side
 
+<!--<div id="inte"> Int </div>
+<div id="str"> Str </div>
+<div id="bo"> Boo </div>
+
+<script>
+	a = true
+	console.log(a) // for console
+	document.write(a)
+	if ( typeof(a) == "number" )
+	{document.getElementById("inte").innerHTML = "Int "+a ;
+		
+	}
+	if ( typeof(a) == "string" )
+        {
+                       document.getElementById("str").innerHTML = "Str "+a ;
+        }
+	if ( typeof(a) == "boolean" )
+        {
+                    document.getElementById("bo").innerHTML = "Boo "+a ;
+}
+</script>-->
+
+
+<div id="inte"> Int </div>
+<div id="str"> Str </div>
+<div id="bo"> Boo </div>
+
+<script>
+	a = true
+	
+	switch(typeof(a)){
+	case "number":
+	document.getElementById("inte").innerHTML = "Int "+a ;
+	break;
+	case "string":
+	  document.getElementById("str").innerHTML = "Str "+a ;
+	break;
+	case "boolean":
+	 document.getElementById("bo").innerHTML = "Boo "+a ;
+	break;
+	}
+	
+	
+	
+</script>	
+	
+	
+	
+	
+	
 
